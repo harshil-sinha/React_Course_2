@@ -6,7 +6,7 @@ import "./Expense.css";
 
 const Expense = (props)=>{
     const clickHandler = ()=>{
-        console.log("hello");
+        console.log("Deleted");
     }
     return (
         <Card className="expense-item">
@@ -16,7 +16,7 @@ const Expense = (props)=>{
                 <h2>{props.title}</h2>
                 <div className="expense-item__price">₹{props.amount}</div>
             </div>
-            <button onClick={clickHandler}>Change Title</button>          
+            <button onClick={clickHandler}>Delete</button>          
        </Card>
     );
     
